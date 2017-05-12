@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/cyrilivargarcia/SwiftyCoreData.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '10.0'
-  s.source_files = 'EasyCoreData/CoreDataModule.swift'
+  s.source_files = 'EasyCoreData/*.swift'
  
 end

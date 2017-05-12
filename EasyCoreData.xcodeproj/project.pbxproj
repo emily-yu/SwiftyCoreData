@@ -51,8 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				01B32A0C1EC443E2008664C5 /* EasyCoreData.h */,
-				01B32A141EC443F1008664C5 /* CoreDataModule.swift */,
 				01A808121EC51122004D906F /* Module.swift */,
+				01B32A141EC443F1008664C5 /* CoreDataModule.swift */,
 				01B32A0D1EC443E2008664C5 /* Info.plist */,
 			);
 			path = EasyCoreData;
