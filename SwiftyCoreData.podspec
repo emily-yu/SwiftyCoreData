@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftyCoreData'
-  s.version          = '0.1.3'
+  s.version          = '0.1.5'
   s.summary          = 'Making CoreData easier to implement'
  
   s.description      = <<-DESC
