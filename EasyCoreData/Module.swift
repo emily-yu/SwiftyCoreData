@@ -13,12 +13,8 @@ public class Module {
     
     private var name: String!
     
-    init() {
-        
-    }
-    
-    public func app(Name: String) {
-        name = Name
+    init(xcDataModelID: String) {
+        name = xcDataModelID
     }
     
     public func managedObjectModel() -> NSManagedObjectModel  {

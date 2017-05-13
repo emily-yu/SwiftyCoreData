@@ -13,12 +13,12 @@ public class CoreDataModule: Module {
     
     private var entity: String!
     
-    public init(entityName: String) {
+    public init(entityName: String, xcDataModelID: String) {
+        super.init(xcDataModelID: xcDataModelID)
         entity = entityName
     }
     
-    public func push<V>(values: [V], keys: [String]) {
-        
+    public func push<Values>(values: [Values], keys: [String]) {
         
         let managedContext = managedObjectContext
         let entity = NSEntityDescription.entity(forEntityName: "\(self.entity!)", in: managedContext)
