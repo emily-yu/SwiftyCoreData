@@ -19,7 +19,9 @@ Create an instance of the CoreDataModule class which takes 2 parameters. <br>
 ```entityName``` is the name of your created entity inside the xcDataModelID. <br>
 ```xcDataModelID``` is the name of your created Data Model file
 
+```
 var module = CoreDataModule(entityName: "<Entity Name>", xcDataModelID: "<Data Model Name>")
+```
 
 ## 2) Save Data
 
