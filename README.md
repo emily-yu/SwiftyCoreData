@@ -25,9 +25,7 @@ var module = CoreDataModule(entityName: "<Entity Name>", xcDataModelID: "<Data M
 
 ## 2) Save Data
 
-__Before saving data, make sure you create your entities!__
-
-Create an instance of the CoreDataModule
+>Before saving data, make sure you create your entities!
 
 __Saving data__, call the ```push()``` method which accepts 2 array parameters, ```values``` and ```keys```.  <br>
 ```values``` is a generic type which accepts the information you want to save. <br>
