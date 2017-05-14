@@ -1,6 +1,6 @@
 # SwiftyCoreData
 
-## Installation
+## Installation with Cocoapods
 Installing SwiftyCoreData is sa simple as
 ```
 pod 'SwiftyCoreData'
