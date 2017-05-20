@@ -63,14 +63,26 @@ public class CoreDataModule: Module {
 
     }
     
-    public func filterBy<value>(value: value, withKey: String) -> [NSManagedObject] {
+    public func filterBy<T>(value: T, withKey: String) -> [NSManagedObject] {
         
         let managedContext = managedObjectContext
         let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "\(self.entity!)")
+
+        var predicate: NSPredicate!
         
-        let predicate = NSPredicate(format: "\(withKey) = %@", value as! CVarArg)
+        if let intValue = value as? Int {
+            predicate = NSPredicate(format: "\(withKey) = %i", intValue)
+        }
+        
+        if let double = value as? Double {
+            predicate = NSPredicate(format: "\(withKey) = %f", double)
+        }
+        
+        if let strValue = value as? String {
+            predicate = NSPredicate(format: "\(withKey) = %@", strValue)
+        }
+        
         fetchrequest.predicate = predicate
-        
         let results = try? managedContext.fetch(fetchrequest) as! [NSManagedObject]
         return results!
     }
