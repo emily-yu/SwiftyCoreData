@@ -3,11 +3,11 @@
 ## Methods
 |     Type              | Function | Description |
 | --------------------- | ------------- | ------------- | 
-|         void          | push(values: <object>, keys: [String])| `values` are the values you want to add into your database. keys are attributes.  | 
-| -> [NSManagedobject]  | retrieveData()| Returns an array of type `NSMAnagedobject` | 
-| -> [NSManagedobject]  | retrieveAndSort(byKey: String, ascending: Bool)| retrieves and sorts by attribute in ascending or descending order | 
-| -> [NSManagedobject]  | filterBy(value: <object>, withKey: String) | Filter by attribute  | 
-|         void          | remove(object: [NSManagedObject], index: Int)| remove an object by index.  | 
+|         void          | `push(values: <object>, keys: [String])`| `values` are the values you want to add into your database. keys are attributes.  | 
+| -> [NSManagedobject]  | `retrieveData()`| Returns an array of type `NSMAnagedobject` | 
+| -> [NSManagedobject]  | `retrieveAndSort(byKey: String, ascending: Bool)`| retrieves and sorts by attribute in ascending or descending order | 
+| -> [NSManagedobject]  | `filterBy(value: <object>, withKey: String)` | Filter by attribute  | 
+|         void          | `remove(object: [NSManagedObject], index: Int)`| remove an object by index.  | 
 
 
 
